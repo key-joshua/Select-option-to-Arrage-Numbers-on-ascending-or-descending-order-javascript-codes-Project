@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  </head>
+  
+<body>
+  <div class="header">
+  
+<h1>Arrage Numbers</h1>
+
+</div>
+  <div class="input-groups">
+  <div class="input-group">
+    
+    <label>LIST</label>
+<!--     <br> -->
+    <input type="text" name="list" id="list" />
+
+    <br><br>
+    <select name="order" id="order" onchange="show('bubbles','bubbles_0','odd', this)" required="">
+      <option value="">Order... </option>
+      <option value="Ascending Order">Ascending Order </option>
+      <option value="Descending Order">Descending Order </option>
+    </select>
+    <br><br>
+
+
+    <button id="bubbles" class="btns">Arrange</button>
+  
+    <button id="bubbles_0" class="btns">Arrange</button>
+    <br><br><br><br>
+    <p id="results" >Results....</p>
+    </div><br>
+    
+  &copy Joshua 
+     </div>
+   
+  
+  
+  <script src="js/script.js"></script>
+  
+  </body>
+</html>
