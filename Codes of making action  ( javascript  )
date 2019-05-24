@@ -1,0 +1,95 @@
+let inputs = document.querySelector("#list");
+  let message = document.querySelector("#results");
+
+  let btn_1 = document.getElementById("bubbles");
+  let btn_2 =document.getElementById("bubbles_0");
+  
+  let op_1 = "Ascending Order";
+  let op_2 = "Descending Order";
+
+
+  let show = (bubbles,bubbles_0,odd, element) =>
+  {
+    btn_1.style.display = element.value === op_1 ? 'block' : 'none' ;
+    btn_2.style.display = element.value === op_2 ? 'block' : 'none' ;
+    btn_3.style.display = element.value === op_3 ? 'block' : 'none' ;
+  }
+  
+  
+ 
+
+let bubble_1 = () => {
+  // var list=[3,0,2,1,5,4];
+  let list = inputs.value.split(",").map(Number);
+  let length_list=list.length;
+  
+  if (list <= 1 ) 
+
+  {
+    message.innerHTML = "Hy!!  Please insert list of numbers to arrange";
+    return;
+  } 
+  
+  
+  
+
+  for (var i = 0; i < length_list; i++) 
+  {
+    for (var j = 0; j < length_list; j++) 
+    {
+      if (list[j] > list[j+1]) 
+      {
+        let temp = list[j];
+
+        list[j]=list[j+1];
+        list[j+1]=temp;
+      }
+    }
+  }
+
+  message.innerHTML= list;
+  return;
+
+  }
+
+  btn_1.addEventListener('click', () => {
+  console.log(bubble_1()); 
+});
+
+
+  let bubble_2 = () => {
+  // var list=[3,0,2,1,5,4];
+  let list = inputs.value.split(",").map(Number);
+  let length_list=list.length;
+    
+     if (list <= 1 ) 
+
+  {
+    message.innerHTML = "Hy!! Please insert list of numbers to arrange";
+    return;
+  } 
+  
+
+  for (var i = 0; i < length_list; i++) 
+  {
+    for (var j = 0; j < length_list; j++) 
+    {
+      if ( list[j+1] > list[j] ) 
+      {
+        let temp = list[j+1];
+
+        list[j+1] = list[j];
+        list[j]=temp;
+      }
+    }
+  }
+
+  message.innerHTML= list;
+  return;
+
+  }
+
+  
+  btn_2.addEventListener('click', () => {
+  console.log(bubble_2()); 
+});
