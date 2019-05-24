@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+  <link rel="stylesheet" type="text/css" href="your_location/your_style_file_name.css">
+	<SCRIPT language = "JavaScript" SRC = "your_location/your_javascript _file_name.js"></SCRIPT>
   </head>
   
 <body>
