@@ -1,0 +1,1 @@
+This is simply javascript project of Selecting option to Arrage Numbers on ascending or descending order javascript codes  Project where you insert list of numbers and then you select or choose the action to be performed between ascending or descending order 
